@@ -57,3 +57,10 @@ main:has(.back-link) {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+@media only screen and (min-width: 1440px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
