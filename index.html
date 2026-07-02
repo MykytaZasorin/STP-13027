@@ -7,59 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Inter:wght@300;400;500;600;700&family=Lato:wght@500&family=Roboto:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <title>Guild of Guardians</title>
     <script type="module" crossorigin src="/STP-13027/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-13027/assets/styles-CgAvX19P.css">
+    <link rel="stylesheet" crossorigin href="/STP-13027/assets/styles-BEuJFnfg.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <div class="wrapper">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="{=$icon-path}"></use>
-          </svg>
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="{=$icon-path2}"></use>
-          </svg>
-        </a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a
-              class="nav-link {=$highlight-act}"
-              href="../terms-conditions.html"
-              >Terms&Conditions</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="../privacy-policy.html"
-              >Privacy Policy</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">
-          Open menu
-        </button>
-        <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
-          </ul>
-          <button type="button" class="btn-close" data-action="close">
-            close
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="container"></div>
 </header>
 
 
@@ -76,8 +33,112 @@
   <div class="container"></div>
 </section>
 
-      <section>
-  <div class="container"></div>
+      <section class="section" id="characters">
+  <div class="container">
+    <div class="characters_header">
+      <h2 class="characters_title">Characters</h2>
+      <span class="characters_line" aria-hidden="true"></span>
+      <p class="characters_subtitle">Legendary guardians of the realm</p>
+    </div>
+
+    <ul class="characters_list">
+      <li class="characters_item card-character">
+        <div class="card-character_thumb">
+          <picture>
+            <source
+              srcset="/STP-13027/assets/flame-knight-C1d9GDqv.png 1x, /STP-13027/assets/flame-knight@2x-d4RTMYG1.png 2x"
+              type="image/png"
+            />
+            <img
+              src="/STP-13027/assets/flame-knight-C1d9GDqv.png"
+              alt="The Flame Knight"
+              class="card-character_img"
+              loading="lazy"
+              width="343"
+            />
+          </picture>
+        </div>
+        <div class="card-character_content">
+          <h3 class="card-character_name">The Flame Knight</h3>
+          <p class="card-character_desc">
+            This tank can dish out serious fire damage while soaking up hits
+          </p>
+        </div>
+      </li>
+
+      <li class="characters_item card-character">
+        <div class="card-character_thumb">
+          <picture>
+            <source
+              srcset="/STP-13027/assets/shadow-archer-DANjIScP.png 1x, /STP-13027/assets/shadow-archer@2x-Cbjwh7wJ.png 2x"
+              type="image/png"
+            />
+            <img
+              src="/STP-13027/assets/shadow-archer-DANjIScP.png"
+              alt="The Shadow Archer"
+              class="card-character_img"
+              loading="lazy"
+              width="343"
+            />
+          </picture>
+        </div>
+        <div class="card-character_content">
+          <h3 class="card-character_name">The Shadow Archer</h3>
+          <p class="card-character_desc">
+            A fast ranged assassin specializing in precision attacks
+          </p>
+        </div>
+      </li>
+
+      <li class="characters_item card-character">
+        <div class="card-character_thumb">
+          <picture>
+            <source
+              srcset="/STP-13027/assets/arcane-mage-DXjWrWdf.png 1x, /STP-13027/assets/arcane-mage@2x-Cz1C5VQc.png 2x"
+              type="image/png"
+            />
+            <img
+              src="/STP-13027/assets/arcane-mage-DXjWrWdf.png"
+              alt="The Arcane Mage"
+              class="card-character_img"
+              loading="lazy"
+              width="343"
+            />
+          </picture>
+        </div>
+        <div class="card-character_content">
+          <h3 class="card-character_name">The Arcane Mage</h3>
+          <p class="card-character_desc">
+            A powerful spellcaster capable of devastating magical damage
+          </p>
+        </div>
+      </li>
+
+      <li class="characters_item card-character">
+        <div class="card-character_thumb">
+          <picture>
+            <source
+              srcset="/STP-13027/assets/celestial-guardian-CqAHe3Gn.png 1x, /STP-13027/assets/celestial-guardian@2x-D7RylRwb.png 2x"
+              type="image/png"
+            />
+            <img
+              src="/STP-13027/assets/celestial-guardian-CqAHe3Gn.png"
+              alt="The Celestial Guardian"
+              class="card-character_img"
+              loading="lazy"
+              width="343"
+            />
+          </picture>
+        </div>
+        <div class="card-character_content">
+          <h3 class="card-character_name">The Celestial Guardian</h3>
+          <p class="card-character_desc">
+            A holy protector focused on defense and team support
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>
 
       <section>
