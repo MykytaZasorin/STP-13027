@@ -2,8 +2,6 @@
   --font-main: 'Inter', sans-serif;
   --font-accent-decor: 'Cinzel Decorative', serif;
   --font-accent: 'Cinzel', serif;
-  --font-lato: 'Lato', sans-serif;
-  --font-roboto: 'Roboto', sans-serif;
 
   --weight-light: 300;
   --weight-regular: 400;
@@ -11,19 +9,32 @@
   --weight-semibold: 600;
   --weight-bold: 700;
 
+  --color-bg-main: #121220;
+  --color-accent: #ff9f1c;
+  --color-text-muted: #9fb5d3;
+  --color-card-bg: #1a232e;
+  --color-border: #485b6e;
+  --color-black: #000000;
+  --color-white: #fff;
+
   font-family: var(--font-main);
   font-size: 16px;
   line-height: 1.5;
   font-weight: var(--weight-regular);
-
-  color: #242424;
-  background-color: #ffffff;
+  color: var(--color-white);
+  background-color: var(--color-bg-main);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -40,4 +51,9 @@ main {
 
 main:has(.back-link) {
   text-align: center;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
