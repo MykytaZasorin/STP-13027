@@ -1,7 +1,7 @@
 :root {
   --font-main: 'Inter', sans-serif;
-  --font-accent-decor: 'Cinzel Decorative', serif;
-  --font-accent: 'Cinzel', serif;
+  --font-accent-decor: 'Cinzel Decorative', sans-serif;
+  --font-accent: 'Cinzel', sans-serif;
 
   --weight-light: 300;
   --weight-regular: 400;
