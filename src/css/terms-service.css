@@ -1,0 +1,142 @@
+.terms_page {
+  padding: 60px 16px;
+  background-color: var(--color-bg-main);
+  min-height: 100vh;
+}
+
+.terms_content-div {
+  width: 100%;
+  max-width: 343px;
+  margin: 0 auto;
+}
+
+.terms_back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+  font-family: var(--font-main);
+  font-size: 28px;
+  font-weight: var(--weight-bold);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.terms_content {
+  color: var(--color-white);
+}
+
+.terms_main-title {
+  font-family: var(--font-accent-decor);
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.terms_date {
+  font-family: var(--font-main);
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: var(--weight-semibold);
+  color: var(--color-accent);
+}
+
+.terms_content p {
+  margin-bottom: 16px;
+}
+
+.terms_strong-message {
+  font-size: 20px;
+  font-weight: var(--weight-light);
+}
+
+.terms_subtitle {
+  font-family: var(--font-accent-decor);
+  font-size: 24px;
+  /* text-transform: uppercase; */
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.terms_bullet-p {
+  display: grid;
+  gap: 8px;
+  align-items: start;
+}
+
+.first-list {
+  margin-left: 9px;
+  grid-template-columns: 18px 1fr;
+}
+
+.second-list {
+  grid-template-columns: 28px 1fr;
+}
+.second-list .terms_bullet-char {
+  text-align: right;
+  width: 100%;
+}
+
+.third-list {
+  margin-left: 9px;
+  grid-template-columns: 18px 1fr;
+  gap: 0;
+}
+
+.terms_bullet-p span {
+  display: block;
+}
+
+.terms_bullet-char {
+  font-weight: 300;
+  text-align: right;
+}
+
+.terms_bullet-p:last-of-type {
+  margin-bottom: 0;
+}
+
+.terms_link {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 1440px) {
+  .terms_page {
+    padding: 80px 120px;
+  }
+
+  .terms_content-div {
+    max-width: 1200px;
+  }
+
+  .terms_back-btn {
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
+
+  .terms_main-title {
+    font-size: 64px;
+  }
+
+  .terms_subtitle {
+    font-size: 32px;
+  }
+
+  .terms_bullet-p {
+    gap: 4px;
+    margin-left: 6px;
+    margin-bottom: 20px;
+  }
+
+  .terms_strong-message {
+    font-size: 24px;
+  }
+
+  .first-list {
+    grid-template-columns: 24px 1fr;
+  }
+
+  .second-list {
+    grid-template-columns: 38px 1fr; /* Ідеально для "13." великим шрифтом */
+  }
+}
