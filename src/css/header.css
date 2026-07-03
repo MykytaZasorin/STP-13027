@@ -2,29 +2,42 @@
   backdrop-filter: blur(20px);
   background: rgba(18, 24, 32, 0.8);
   border-bottom: 1px solid #1f2833;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.header-nav-list,
-.header-contacts {
-  display: none;
+  /* width: 100%; */
 }
 
 .header-logo {
-  /* display: flex; */
-  /* align-items: center; */
+  display: flex;
   margin-top: 21px;
   margin-bottom: 21px;
+  width: 100%;
+
   font-family: var(--font-accent-decor);
   font-weight: var(--weight-bold);
   font-size: 14px;
   text-transform: capitalize;
 }
+
+.header-nav {
+  display: none;
+}
+
+.header-button {
+  display: none;
+}
+
+/* .header-actions a {
+  display: none;
+} */
 
 .burger-button {
   padding: 0;
@@ -42,12 +55,14 @@
     display: none;
   }
 
-  .navbar {
+  .mobile-menu {
     display: none;
   }
 
   .header-logo {
-    margin-right: 110px;
+    display: flex;
+    width: 284px;
+    height: 48px;
     font-family: var(--font-accent);
     font-size: 24px;
     line-height: 2;
@@ -56,12 +71,10 @@
 
   .header-nav {
     display: flex;
-    align-items: center;
   }
 
   .header-nav-list {
     display: flex;
-    align-items: center;
     gap: 32px;
   }
 
@@ -69,21 +82,52 @@
     padding: 28px 0;
     font-weight: var(--weight-medium);
     text-transform: capitalize;
+    position: relative;
+
+    transition: width 300ms ease;
   }
 }
 
-/* .header-nav-link:hover,
-  .header-nav-link:focus {
-    cursor: pointer;
-    border-bottom-color: #030a06;
-    font-weight: bold;
-    color: #030a06;
-  } */
-
-/* [data-visible='open'] {
-  display: flex;
+.header-nav-link:hover,
+.header-nav-link:focus {
+  cursor: pointer;
+  color: var(--color-accent);
 }
 
-[data-visible='close'] {
-  display: none;
-} */
+.header-nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+.header-nav-link:active::after {
+  width: 100%;
+}
+
+.header-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 142px;
+  height: 48px;
+  background-color: var(--color-accent);
+
+  font-weight: var(--weight-semibold);
+  color: var(--color-black);
+
+  transition: background-color 200ms ease;
+}
+
+.header-button:hover,
+.header-button:focus {
+  background-color: rgb(252, 179, 78);
+}
+
+.header-button:active {
+  background-color: rgb(216, 127, 3);
+}

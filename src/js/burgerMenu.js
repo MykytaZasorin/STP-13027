@@ -1,11 +1,15 @@
 const openBtnEl = document.querySelector('[data-action="open"]');
-const closeBtnEl = document.querySelector('[data-action="close"]');
 const burgerMenuEl = document.querySelector('[data-visible]');
 
 openBtnEl.addEventListener('click', e => {
+  e.stopPropagation();
   burgerMenuEl.dataset.visible = 'open';
 });
 
-closeBtnEl.addEventListener('click', e => {
-  burgerMenuEl.dataset.visible = 'close';
+document.addEventListener('click', e => {
+  if (burgerMenuEl.dataset.visible === 'open') {
+    if (!burgerMenuEl.contains(e.target) && !openBtnEl.contains(e.target)) {
+      burgerMenuEl.dataset.visible = 'close';
+    }
+  }
 });
