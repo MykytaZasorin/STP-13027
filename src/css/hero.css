@@ -1,0 +1,149 @@
+.hero-section {
+  padding-top: 46px;
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.hero-title {
+  font-family: var(--font-accent-decor);
+  font-size: 32px;
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  color: var(--color-text-muted);
+  font-weight: var(--weight-semibold);
+  margin-bottom: 32px;
+  /* max-width: 340px; */
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-accent);
+  color: var(--color-black);
+  font-weight: var(--weight-bold);
+  line-height: 1;
+  text-transform: uppercase;
+
+  height: 47px;
+  padding-left: 28px;
+  padding-right: 28px;
+  border-radius: 4px;
+}
+
+.icon-play {
+  color: var(--color-accent);
+}
+
+.hero-btn:active {
+  background-color: #ff970a;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  order: -1;
+}
+
+.hero-image {
+  position: relative;
+  z-index: 3;
+}
+
+.hero-image-wrapper .hero-blur-circle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  background-color: #4f709a;
+  z-index: 1;
+
+  width: 260px;
+  height: 260px;
+  filter: blur(120px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    gap: 38px;
+  }
+
+  .hero-content {
+    align-items: flex-start;
+    max-width: 588px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    margin-bottom: 32px;
+  }
+
+  .hero-text {
+    font-size: 20px;
+    line-height: 1.4;
+    /* max-width: 460px; */
+    margin-bottom: 48px;
+  }
+
+  .hero-btn {
+    padding-left: 80px;
+    padding-right: 80px;
+
+    transition: background-color 300ms ease;
+  }
+
+  .hero-btn:hover,
+  .hero-btn:focus {
+    background-color: #ffac3b;
+  }
+
+  .hero-image-wrapper {
+    max-width: 844px;
+    order: 0;
+  }
+
+  .hero-image-wrapper .hero-blur-circle {
+    width: 500px;
+    height: 500px;
+    filter: blur(300px);
+
+    /* Якщо потрібно змістити трохи вбік, можна замінити відсотки або додати зсув: */
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
