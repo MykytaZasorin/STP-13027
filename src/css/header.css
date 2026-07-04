@@ -1,7 +1,150 @@
-[data-visible='open'] {
-  display: flex;
+.page-header {
+  backdrop-filter: blur(20px);
+  background: rgba(18, 24, 32, 0.8);
+  border-bottom: 1px solid #1f2833;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-[data-visible='close'] {
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 0;
+}
+
+.header-logo {
+  display: flex;
+  padding-top: 0;
+  width: auto;
+
+  font-family: var(--font-accent-decor);
+  font-weight: var(--weight-bold);
+  font-size: 14px;
+  text-transform: capitalize;
+
+  transition: color 300ms ease;
+}
+
+.header-logo:active {
+  color: #ffac3b;
+}
+
+.header-nav {
   display: none;
+}
+
+.header-button {
+  display: none;
+}
+
+.burger-button {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-icon {
+  fill: var(--color-white);
+
+  transition: fill 300ms ease;
+}
+
+.burger-icon:active {
+  fill: #ffac3b;
+}
+
+@media screen and (min-width: 1440px) {
+  .burger-button {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .header-logo {
+    display: flex;
+    width: 284px;
+    height: 48px;
+    font-family: var(--font-accent);
+    font-size: 24px;
+    line-height: 2;
+    text-transform: uppercase;
+
+    transition: color 300ms ease;
+  }
+
+  .header-logo:hover,
+  .header-logo:focus {
+    color: var(--color-accent);
+  }
+
+  .header-nav {
+    display: flex;
+  }
+
+  .header-nav-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .header-nav-link {
+    padding: 28px 0;
+    font-weight: var(--weight-medium);
+    text-transform: capitalize;
+    position: relative;
+
+    transition: width 300ms ease;
+  }
+
+  .header-nav-link:hover,
+  .header-nav-link:focus {
+    cursor: pointer;
+    color: var(--color-accent);
+  }
+
+  .header-nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent);
+  }
+
+  .header-nav-link:active::after {
+    width: 100%;
+  }
+
+  .header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 142px;
+    height: 48px;
+    background-color: var(--color-accent);
+
+    font-weight: var(--weight-semibold);
+    color: var(--color-black);
+
+    transition: background-color 200ms ease;
+  }
+
+  .header-button:hover,
+  .header-button:focus {
+    background-color: #ffac3b;
+  }
+
+  .header-button:active {
+    background-color: #ff970a;
+  }
 }
