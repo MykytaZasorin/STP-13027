@@ -78,3 +78,7 @@
 [data-visible='close'] {
   display: none;
 }
+
+body.menu-open {
+  overflow: hidden;
+}
