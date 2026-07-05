@@ -14,13 +14,17 @@
 .legal_back-btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   margin-bottom: 32px;
   font-family: var(--font-main);
   font-size: 28px;
   font-weight: var(--weight-bold);
   color: var(--color-white);
   text-decoration: none;
+}
+
+.legal_back-icon {
+  fill: var(--color-accent);
 }
 
 .legal_content {
