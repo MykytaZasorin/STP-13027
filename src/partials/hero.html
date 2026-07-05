@@ -1,3 +1,44 @@
-<section>
-  <div class="container"></div>
+<section class="hero-section">
+  <div class="container hero-container">
+    <div class="hero-content">
+      <h1 class="hero-title">Build your dream team of heroes</h1>
+      <p class="hero-text">
+        Challenging dungeons and fantasy adventures are waiting for you
+      </p>
+
+      <a
+        href="https://play.google.com/store/apps/details?id=com.immutable.guildofguardians"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hero-btn"
+      >
+        <svg class="icon-play" width="24" height="24">
+          <use href="/img/sprite.svg#icon-play"></use>
+        </svg>
+        Play on Google Play
+      </a>
+    </div>
+
+    <div class="hero-image-wrapper">
+      <div class="hero-blur-circle"></div>
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/img/hero/hero-desktop.png, /img/hero/hero-desktop.png@2x"
+        />
+        <source
+          srcset="/img/hero/hero-mobile.png, /img/hero/hero-mobile.png@2x"
+        />
+
+        <img
+          src="/img/hero/hero-mobile.png"
+          alt="Guild of Guardians Heroes"
+          class="hero-image"
+          width="375"
+          height="210"
+          loading="eager"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
