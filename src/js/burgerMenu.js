@@ -11,7 +11,7 @@ document.addEventListener('click', e => {
   if (burgerMenuEl.dataset.visible === 'open') {
     if (!burgerMenuEl.contains(e.target) && !openBtnEl.contains(e.target)) {
       burgerMenuEl.dataset.visible = 'close';
-      document.body.classList.remove('menu-open');
+      delete document.body.dataset.menuOpen;
     }
   }
 });
