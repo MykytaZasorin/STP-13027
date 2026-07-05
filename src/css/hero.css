@@ -31,7 +31,6 @@
   color: var(--color-text-muted);
   font-weight: var(--weight-semibold);
   margin-bottom: 32px;
-  /* max-width: 340px; */
 }
 
 .hero-btn {
@@ -52,6 +51,7 @@
 
 .icon-play {
   color: var(--color-accent);
+  margin-right: 4px;
 }
 
 .hero-btn:active {
@@ -91,20 +91,26 @@
 
 @media screen and (min-width: 1440px) {
   .hero-section {
-    padding-top: 100px;
+    padding-top: 62px;
     padding-bottom: 100px;
   }
 
   .hero-container {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     text-align: left;
-    gap: 38px;
+    gap: 0;
+    padding-right: 0;
   }
 
   .hero-content {
+    padding-top: 38px;
     align-items: flex-start;
-    max-width: 588px;
+    flex: 0 0 588px;
+    position: relative;
+    z-index: 5;
   }
 
   .hero-title {
@@ -115,7 +121,7 @@
   .hero-text {
     font-size: 20px;
     line-height: 1.4;
-    /* max-width: 460px; */
+    max-width: 450px;
     margin-bottom: 48px;
   }
 
@@ -132,8 +138,20 @@
   }
 
   .hero-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex: 0 0 844px;
+    width: 844px;
     max-width: 844px;
     order: 0;
+    margin-left: -100px;
+    z-index: 4;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
   }
 
   .hero-image-wrapper .hero-blur-circle {
@@ -141,7 +159,6 @@
     height: 500px;
     filter: blur(300px);
 
-    /* Якщо потрібно змістити трохи вбік, можна замінити відсотки або додати зсув: */
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
