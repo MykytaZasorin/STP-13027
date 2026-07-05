@@ -79,6 +79,6 @@
   display: none;
 }
 
-body.menu-open {
+body[data-menu-open] {
   overflow: hidden;
 }
