@@ -4,7 +4,7 @@ const burgerMenuEl = document.querySelector('[data-visible]');
 openBtnEl.addEventListener('click', e => {
   e.stopPropagation();
   burgerMenuEl.dataset.visible = 'open';
-  document.body.classList.add('menu-open');
+  document.body.dataset.menuOpen = 'true';
 });
 
 document.addEventListener('click', e => {
