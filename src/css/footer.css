@@ -38,20 +38,8 @@
 }
 
 .footer_link {
-  font-family: var(--font-main);
-  font-size: 16px;
-  line-height: 1.5;
   font-weight: var(--weight-medium);
-  color: var(--color-white);
   text-decoration: none;
-}
-
-.footer_copy {
-  font-family: var(--font-main);
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: var(--weight-regular);
-  color: var(--color-white);
 }
 
 @media only screen and (min-width: 1440px) {

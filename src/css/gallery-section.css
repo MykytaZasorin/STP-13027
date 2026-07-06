@@ -1,9 +1,6 @@
 .gallery_title {
   font-family: var(--font-accent-decor);
-  font-weight: var(--weight-bold);
   font-size: 28px;
-  line-height: 1.5;
-  color: var(--color-white);
   margin-bottom: 8px;
 }
 
