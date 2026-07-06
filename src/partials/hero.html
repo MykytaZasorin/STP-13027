@@ -24,10 +24,13 @@
       <picture>
         <source
           media="(min-width: 1440px)"
-          srcset="/img/hero/hero-desktop.png, /img/hero/hero-desktop.png@2x"
+          srcset="
+            /img/hero/hero-desktop.png    1x,
+            /img/hero/hero-desktop.png@2x 2x
+          "
         />
         <source
-          srcset="/img/hero/hero-mobile.png, /img/hero/hero-mobile.png@2x"
+          srcset="/img/hero/hero-mobile.png 1x, /img/hero/hero-mobile.png@2x 2x"
         />
 
         <img
@@ -37,6 +40,8 @@
           width="375"
           height="210"
           loading="eager"
+          fetchpriority="high"
+          decoding="async"
         />
       </picture>
     </div>

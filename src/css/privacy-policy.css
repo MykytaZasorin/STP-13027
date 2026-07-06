@@ -16,19 +16,13 @@
   align-items: center;
   gap: 12px;
   margin-bottom: 32px;
-  font-family: var(--font-main);
   font-size: 28px;
   font-weight: var(--weight-bold);
-  color: var(--color-white);
   text-decoration: none;
 }
 
 .legal_back-icon {
   fill: var(--color-accent);
-}
-
-.legal_content {
-  color: var(--color-white);
 }
 
 .legal_main-title {
@@ -39,7 +33,6 @@
 }
 
 .legal_date {
-  font-family: var(--font-main);
   font-size: 20px;
   font-weight: var(--weight-semibold);
   color: var(--color-accent);
@@ -48,7 +41,6 @@
 
 .legal_content p {
   font-family: var(--font-main);
-  color: var(--color-white);
   margin-bottom: 20px;
 }
 

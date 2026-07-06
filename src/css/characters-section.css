@@ -8,8 +8,6 @@
   font-family: var(--font-accent-decor);
   font-weight: var(--weight-bold);
   font-size: 28px;
-  line-height: 1.5;
-  color: var(--color-white);
   margin-bottom: 8px;
 }
 
@@ -21,7 +19,6 @@
 }
 
 .characters_subtitle {
-  font-family: var(--font-main);
   font-weight: var(--weight-bold);
   font-size: 18px;
   line-height: 1.5;
@@ -64,7 +61,6 @@
 }
 
 .card-character_name {
-  font-family: var(--font-main);
   font-size: 20px;
   line-height: 1.4;
   font-weight: var(--weight-semibold);
@@ -73,7 +69,6 @@
 
 .card-character_desc {
   font-size: 16px;
-  line-height: 1.5;
   font-weight: var(--weight-regular);
   color: var(--color-text-muted);
   max-width: 283px;
@@ -86,7 +81,6 @@
 
   .characters_title {
     font-size: 32px;
-    line-height: 1.5;
     margin-bottom: 12px;
   }
 
