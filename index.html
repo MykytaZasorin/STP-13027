@@ -4,15 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/STP-13027/assets/favicon-X659y8Bb.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Guild of Guardians is an epic mobile team RPG. Assemble your dream team of guardians, battle through challenging dungeons, and earn rewards. Play now!"
+    />
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="/STP-13027/assets/hero-mobile-BrYlIMuO.png"
+      type="image/png"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <title>Guild of Guardians</title>
+
     <script type="module" crossorigin src="/STP-13027/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-13027/assets/styles-B5FXrvuI.css">
+    <link rel="stylesheet" crossorigin href="/STP-13027/assets/styles-BTRm93Ot.css">
   </head>
   <body>
     <header class="page-header">
@@ -48,7 +62,12 @@
           class="header-button"
           >PLAY NOW</a
         >
-        <button class="burger-button" type="button" data-action="open">
+        <button
+          class="burger-button"
+          type="button"
+          data-action="open"
+          aria-label="Open navigation menu"
+        >
           <svg class="burger-icon" width="24" height="24">
             <use href="/STP-13027/assets/sprite-CidfWEJZ.svg#icon-burger"></use>
           </svg>
@@ -86,10 +105,10 @@
       <picture>
         <source
           media="(min-width: 1440px)"
-          srcset="/STP-13027/assets/hero-desktop-QMAp1EYW.png, /img/hero/hero-desktop.png@2x"
+          srcset="/STP-13027/assets/hero-desktop-QMAp1EYW.png 1x, /img/hero/hero-desktop.png@2x 2x"
         />
         <source
-          srcset="/STP-13027/assets/hero-mobile-BrYlIMuO.png, /img/hero/hero-mobile.png@2x"
+          srcset="/STP-13027/assets/hero-mobile-BrYlIMuO.png 1x, /img/hero/hero-mobile.png@2x 2x"
         />
 
         <img
@@ -99,6 +118,8 @@
           width="375"
           height="210"
           loading="eager"
+          fetchpriority="high"
+          decoding="async"
         />
       </picture>
     </div>
