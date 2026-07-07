@@ -4,12 +4,12 @@ characterCards.forEach(card => {
   let delayTimeout;
 
   card.addEventListener('click', () => {
-    card.classList.add('is-active');
+    card.setAttribute('data-character-card', 'active');
 
     clearTimeout(delayTimeout);
 
     delayTimeout = setTimeout(() => {
-      card.classList.remove('is-active');
+      card.setAttribute('data-character-card', '');
     }, 800);
   });
 });

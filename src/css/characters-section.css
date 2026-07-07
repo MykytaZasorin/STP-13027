@@ -104,12 +104,14 @@
   box-shadow: 0px 0px 20px rgba(var(--color-accent), 0.4);
 }
 
-.card-character.is-active .card-character_pic--default {
+.card-character[data-character-card='active'] .card-character_pic--default {
   opacity: 0;
+  pointer-events: none;
 }
 
-.card-character.is-active .card-character_pic--active {
+.card-character[data-character-card='active'] .card-character_pic--active {
   opacity: 1;
+  pointer-events: auto;
 }
 
 .card-character.is-active .card-character_content {
