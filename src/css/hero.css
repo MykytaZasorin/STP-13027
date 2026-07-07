@@ -102,7 +102,7 @@
     align-items: center;
     text-align: left;
     gap: 0;
-    padding-right: 0;
+    padding-right: 20px;
   }
 
   .hero-content {
@@ -141,11 +141,12 @@
     position: relative;
     display: flex;
     justify-content: flex-start;
-    flex: 0 0 844px;
-    width: 844px;
+    flex: 0 1 844px;
+    width: 100%;
     max-width: 844px;
     order: 0;
     margin-left: -100px;
+    margin-right: -20px;
     z-index: 4;
   }
 
@@ -155,8 +156,8 @@
   }
 
   .hero-image-wrapper .hero-blur-circle {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     filter: blur(300px);
 
     top: 55%;
