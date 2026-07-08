@@ -11,9 +11,7 @@
 .guide-title {
   font-family: var(--font-accent-decor);
   font-size: 28px;
-  font-weight: var(--weight-bold);
-  text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   position: relative;
   display: inline-block;
   padding-bottom: 8px;
@@ -75,12 +73,12 @@
 
 @media screen and (min-width: 1440px) {
   .guide-header {
-    margin-bottom: 48px;
+    margin-bottom: 42px;
   }
 
   .guide-title {
     font-size: 32px;
-    margin-bottom: 44px;
+    margin-bottom: 32px;
     padding-bottom: 12px;
   }
 
