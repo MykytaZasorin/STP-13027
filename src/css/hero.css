@@ -22,8 +22,6 @@
 .hero-title {
   font-family: var(--font-accent-decor);
   font-size: 32px;
-  font-weight: var(--weight-bold);
-  text-transform: uppercase;
   margin-bottom: 16px;
 }
 
