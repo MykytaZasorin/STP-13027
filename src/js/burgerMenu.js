@@ -7,6 +7,13 @@ openBtnEl.addEventListener('click', e => {
   document.body.dataset.menuOpen = 'true';
 });
 
+burgerMenuEl.addEventListener('click', e => {
+  if (e.target.tagName === 'A') {
+    burgerMenuEl.dataset.visible = 'close';
+    delete document.body.dataset.menuOpen;
+  }
+});
+
 document.addEventListener('click', e => {
   if (burgerMenuEl.dataset.visible === 'open') {
     if (!burgerMenuEl.contains(e.target) && !openBtnEl.contains(e.target)) {
