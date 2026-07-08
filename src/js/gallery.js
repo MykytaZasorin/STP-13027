@@ -13,18 +13,37 @@ const galleryImages = {
   'card-4': cardFourRetina,
 };
 
-document.querySelectorAll("[data-fancybox='gallery']").forEach(link => {
-  const id = link.getAttribute('data-id');
-  const imageAsset = galleryImages[id];
+const playlist = Object.keys(galleryImages).map(id => ({
+  src:
+    typeof galleryImages[id] === 'object'
+      ? galleryImages[id].default
+      : galleryImages[id],
+  type: 'image',
+  caption:
+    document.querySelector(`[data-id="${id}"]`)?.getAttribute('data-caption') ||
+    '',
+}));
 
-  const finalPath =
-    typeof imageAsset === 'object' ? imageAsset.default : imageAsset;
+document
+  .querySelectorAll("a[data-fancybox='gallery'][data-id]")
+  .forEach((link, index) => {
+    const id = link.getAttribute('data-id');
+    const imageAsset = galleryImages[id];
+    const finalPath =
+      typeof imageAsset === 'object' ? imageAsset.default : imageAsset;
 
-  if (finalPath) {
-    link.setAttribute('href', finalPath);
-  }
-});
+    if (finalPath) {
+      link.setAttribute('href', finalPath);
+    }
 
-Fancybox.bind("[data-fancybox='gallery']", {
-  loop: true,
-});
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      Fancybox.show(playlist, {
+        startIndex: index,
+        loop: true,
+        Hash: false,
+      });
+    });
+  });
