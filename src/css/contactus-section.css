@@ -33,11 +33,43 @@
 
   font-size: 18px;
   font-weight: var(--weight-semibold);
+
+  transition:
+    border-color 0.3s ease,
+    color 0.3s ease;
+  outline: none;
 }
 
 .join_icon {
   flex-shrink: 0;
-  color: #ff9900;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  stroke: none;
+
+  color: var(--color-accent);
+  transition: color 0.3s ease;
+}
+
+.join_link:hover {
+  border-color: #ffffff;
+}
+.join_link:hover .join_icon {
+  color: #ffffff;
+}
+
+.join_link:active {
+  border-color: #ffffff;
+}
+.join_link:active .join_icon {
+  color: #ffffff;
+}
+
+.join_link:focus-visible {
+  border-color: #ffffff;
+}
+.join_link:focus-visible .join_icon {
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 1440px) {
